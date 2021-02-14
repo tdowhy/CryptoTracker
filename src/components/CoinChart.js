@@ -36,8 +36,11 @@ const CoinChart = ({ data, name, current_price }) => {
     }
 
     useEffect(() => {
+        if(window.chartInstance && window.chartInstance !== null) {
+            window.chartInstance.destroy();
+        }
         if (chartRef && chartRef.current) {
-            const chartInstance = new Chartjs(chartRef.current, {
+            window.chartInstance = new Chartjs(chartRef.current, {
                 type: 'line',
                 data: {
                     datasets: [{
@@ -48,9 +51,12 @@ const CoinChart = ({ data, name, current_price }) => {
                         pointRadius: 0,
                     }],
                 },
-                options: chartOptions,
+                options: {
+                    ...chartOptions,
+                }
             });
         }
+        window.chartInstance.update();
     });
 
     return (
@@ -61,8 +67,8 @@ const CoinChart = ({ data, name, current_price }) => {
             ) : (
                 <h3>{current_price} <span className="green">({determineTime()}%)</span></h3>
             )}
-            <div>
-                <canvas ref={chartRef} id='coin-chart' height={250}></canvas>
+            <div className="chart-ctnr">
+                <canvas ref={chartRef} id='coin-chart' width={800} height={250}></canvas>
             </div>
             <div className="chart-button mt-1">
                 <button onClick={() => setTimeFormat('24h')} className="btn btn-outline-secondary btn-sm">Day</button>
