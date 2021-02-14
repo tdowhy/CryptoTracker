@@ -6,10 +6,10 @@
 
 .cryptotracker-app {
   flex: 1, 0, auto;
-  height: 100%;
-  overflow: auto;
+  /* overflow: auto; */
 }
 .Footer {
+  height: 10%;
   flex-shrink: 0;
   overflow: hidden;
 }

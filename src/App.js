@@ -17,9 +17,8 @@ function App() {
           <Route exact path="/coins/:id" component={CoinPage} />
         </Switch>
         </BrowserRouter>
-        {/* <Footer /> */}
       </div>
-      <Footer className="Footer" />
+      {/* <Footer className="Footer" /> */}
     </>
   );
 }
