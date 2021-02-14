@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Coin from '../components/Coin';
 import coingecko from '../apis/coingecko_api';
+import './Home.css';
 
 const Home = () => {
     const [coins, setCoins] = useState([]);
@@ -29,7 +30,7 @@ const Home = () => {
         coin.name.toLowerCase().includes(search.toLowerCase())
     )
     return (
-        <div>
+        <div className="main-ctnr mt-3">
             <input type="text" placeholder="Search for a coin..." onChange={handleChange} />
             {filteredCoins.map(coin => {
                 return (
