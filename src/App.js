@@ -18,7 +18,7 @@ function App() {
         </Switch>
         </BrowserRouter>
       </div>
-      {/* <Footer className="Footer" /> */}
+      <Footer className="Footer" />
     </>
   );
 }
