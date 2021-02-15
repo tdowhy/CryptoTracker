@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&family=Roboto&display=swap');
+
 .coin-container {
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .coin-row {
@@ -9,8 +12,9 @@
     justify-items: start;
     align-items: center;
     height: 80px;
+    color: #706c6d;
     border-bottom: 1px solid #d7d7d7;
-    width: 900px;
+    min-width: 900px;
 }
 
 .coin {

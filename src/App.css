@@ -5,11 +5,18 @@
 } */
 
 .cryptotracker-app {
-  flex: 1, 0, auto;
-  /* overflow: auto; */
+  /* background-color: #EAE7DC; */
+  flex: 1 0 auto;
+  /* overflow: visible; */
+  min-height: 100%;
+  min-width: 1086px;
 }
-.Footer {
-  height: 10%;
+.ftr {
+  min-height: 100%;
   flex-shrink: 0;
+  left: 0;
+  bottom: 0;
   overflow: hidden;
+  /* position: fixed; */
+  width: 100%
 }

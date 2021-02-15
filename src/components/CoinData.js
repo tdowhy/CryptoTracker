@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './CoinData.css';
 
 const CoinData = (props) => {
     return (

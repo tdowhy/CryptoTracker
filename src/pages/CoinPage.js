@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import coingecko from '../apis/coingecko_api';
 import CoinChart from '../components/CoinChart';
 import CoinData from '../components/CoinData';
+import './CoinPage.css';
 
 const CoinPage = () => {
     const [coin, setCoin] = useState([]);

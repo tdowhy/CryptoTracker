@@ -1,9 +1,10 @@
 .Footer {
     background: #D8C3A5;
-    color: #8E8D8A;
+    color: #706c6d;
     padding: 2em;
     padding-top: 1em;
     height: 2vh;
+    width: 100%;
 }
 
 .footer-text {
@@ -12,6 +13,7 @@
 
 .icon {
     margin-left: 84%;
+    /* margin-right: 16%; */
 }
 a, a:hover, a:visited, a:active {
     color: inherit;

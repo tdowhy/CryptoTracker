@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+
+.header {
+    background: #D8C3A5;
+    color: #706c6d;
+    width: 250px;
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+.site-title {
+    font-size: 1.3em;
+    height: 100%;
+}
+
+.home-logo {
+    margin-bottom: 5px;
+}
