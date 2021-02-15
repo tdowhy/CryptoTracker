@@ -46,8 +46,8 @@ const CoinChart = ({ data, name, current_price }) => {
                     datasets: [{
                         label: `${name} price`,
                         data: determineTimeFormat(),
-                        backgroundColor: "rgba(244, 105, 194, 0.5)",
-                        borderColor: "rgba(174, 105, 194, 0.4)",
+                        backgroundColor: "rgba(233, 128, 116, 0.5)",
+                        borderColor: "rgba(232, 90, 79, 0.4)",
                         pointRadius: 0,
                     }],
                 },
