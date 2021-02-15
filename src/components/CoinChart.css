@@ -5,6 +5,12 @@
     margin: auto;
 }
 
+@media only screen and (max-width: 600px) {
+    .chart-ctnr {
+      min-width: 600px;
+    }
+  }
+
 .titles {
     font-family: 'Lexend Mega', sans-serif;
 }

@@ -21,7 +21,7 @@
 }
 
 .coin-header {
-    margin-left: 80px;
+    margin-left: 120px;
 }
 
 .price-header {
@@ -29,11 +29,11 @@
 }
 
 .market-cap-header {
-    margin-left: 120px;
+    margin-left: 110px;
 }
 
 .price-change-header {
-    margin-left: 50px;
+    margin-left: 45px;
 }
 
 .volume-header {

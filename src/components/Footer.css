@@ -1,3 +1,9 @@
+@media only screen and (max-width: 600px) {
+    .Footer {
+      min-width: 600px;
+    }
+  }
+
 .Footer {
     background: #D8C3A5;
     color: #706c6d;

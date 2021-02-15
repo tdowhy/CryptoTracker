@@ -7,9 +7,11 @@ const Coin = (props) => {
     return (
         <div className="coin-container">
             <div className="coin-row">
-            <div className="coin">
+            <div className="coin hover-zoom">
+                <Link className="coin-item hover-zoom" to={`/coins/${props.id}`}>
+                    <li className="list-group-item list-group-item-action d-flex justify-content-between align-items-center border-0 rounded">
                     <img src={props.image} />
-                    <h1><Link to={`/coins/${props.id}`}>{props.name}</Link></h1>
+                    <h1>{props.name}</h1>
                     <p className="coin-symbol">{props.symbol}</p>
                     <div className="coin-data">
                         <p className="coin-price">${props.current_price.toLocaleString()} </p>
@@ -21,6 +23,8 @@ const Coin = (props) => {
                         )}
                         <p className="coin-volume">${props.total_volume.toLocaleString()}</p>
                     </div>
+                    </li>
+                </Link> 
                 </div>
             </div>
         </div>

@@ -42,11 +42,13 @@ const Home = () => {
                     <p className="volume-header">Total Volume</p>
                 </div>
             </div>
-            {filteredCoins.map(coin => {
-                return (
-                <Coin key={coin.id} id={coin.id} name={coin.name} symbol={coin.symbol} image={coin.image} current_price={coin.current_price} market_cap={coin.market_cap} total_volume={coin.total_volume} price_change={coin.price_change_percentage_24h} />
-                )
-            })}
+            <ul className="lost-group mt-2">
+                {filteredCoins.map(coin => {
+                    return (
+                    <Coin key={coin.id} id={coin.id} name={coin.name} symbol={coin.symbol} image={coin.image} current_price={coin.current_price} market_cap={coin.market_cap} total_volume={coin.total_volume} price_change={coin.price_change_percentage_24h} />
+                    )
+                })}
+            </ul>
         </div>
     )
 }
