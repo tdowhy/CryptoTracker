@@ -4,7 +4,7 @@
     padding: 2em;
     padding-top: 1em;
     height: 2vh;
-    width: 100%;
+    min-width: 1450px;
 }
 
 .footer-text {
