@@ -11,17 +11,17 @@ const Coin = (props) => {
                 <Link className="coin-item hover-zoom" to={`/coins/${props.id}`}>
                     <li className="list-group-item list-group-item-action d-flex justify-content-between align-items-center border-0 rounded">
                     <img src={props.image} />
-                    <h1>{props.name}</h1>
+                    {/* <h1>{props.name}</h1> */}
                     <p className="coin-symbol">{props.symbol}</p>
                     <div className="coin-data">
                         <p className="coin-price">${props.current_price.toLocaleString()} </p>
-                        <p className="coin-marketcap">${props.market_cap.toLocaleString()} </p>
+                        {/* <p className="coin-marketcap">${props.market_cap.toLocaleString()} </p> */}
                         {props.price_change < 0 ? (
                             <p className="coin-percent red">{props.price_change.toFixed(2)}</p>
                         ) : (
                             <p className="coin-percent green">{props.price_change.toFixed(2)}</p>
                         )}
-                        <p className="coin-volume">${props?.total_volume?.toLocaleString()}</p>
+                        {/* <p className="coin-volume">${props?.total_volume?.toLocaleString()}</p> */}
                     </div>
                     </li>
                 </Link> 

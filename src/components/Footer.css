@@ -11,7 +11,8 @@
     padding-top: 1em;
     height: 2vh;
     /* min-width: 1450px; */
-    width: 100%;
+    /* only for mobile will need to change for desktop */
+    width: 106vw;
     text-align: center;
 }
 

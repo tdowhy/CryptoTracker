@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    /* width: 10px; */
 }
 
 .coin-row {
@@ -11,87 +12,102 @@
     flex-direction: row;
     justify-items: start;
     align-items: center;
-    height: 80px;
+    height: 140px;
     color: #706c6d;
     border-bottom: 1px solid #d7d7d7;
+    /* width: 10%; */
     /* min-width: 900px; */
-    /* width: 100%; */
+    /* padding-right: 40px; */
 }
 
 .coin-item li {
     background-color: #D8C3A5;
     color: #706c6d;
-    height: 65px;
-    width: 100%;
+    /* height: 65px; */
+    height: 110px;
+    /* width: 800px; */
+    font-size: 150%;
+    margin-left: 20%;
+    width: 98%;
+    margin-left: 0%;
+    margin-right: 2%;
+    /* margin-right: auto; */
 }
 
-.list-group-item {
+/* .list-group-item {
     width: 100%;
-}
+} */
 
 .coin-item li:hover {
     transition: .5s ease;
     background-color: #706c6d;
     color: white;
-    width: 100%;
+    width: 98%;
     text-align: center;
-
     justify-content: center;
 }
 
 .coin-item {
     text-align: center;
     justify-content: center;
+    margin-left: 50%;
 }
 
-/* .coin {
-    display: flex;
-    align-items: center;
-    padding-right: 24px;
-    min-width: 300px;
-    width: 100%;
-} */
+.coin {
+    margin-bottom: 30px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* padding-right: 24px; */
+    /* min-width: 300px; */
+    /* width: 100%; */
+}
 
 .coin img {
-    height: 30px;
-    /* width: 30px;
-    margin-right: 10px; */
+    /* height: 30px;
+    width: 30px; */
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
 }
 
 .coin h1 {
     font-size: 16px;
-    /* width: 160px;
-    padding-top: 10px; */
+    width: 160px;
+    padding-top: 10px;
 }
 
 .coin-symbol {
     text-transform: uppercase;
     /* width: 80px;
     padding-top: 19px; */
+    padding-top: 19px;
+    width: 30px;
 }
 
 .coin-data {
     display: flex;
     text-align: right;
     justify-content: space-between;
-    width: 100%;
-    padding-top: 19px;
+    /* width: 100%; */
+    padding-top: 20px;
 }
 
 .coin-price {
     /* width: 110px; */
+    width: 160px;
 }
 
 .coin-volume {
-    /* width: 155px; */
+    width: 155px;
 }
 
 .coin-marketcap {
-    /* width: 230px; */
+    width: 230px;
 }
 
 .coin-percent {
     /* width: 100px; */
+    width: 130px;
 }
 
 .red {

@@ -4,6 +4,15 @@
     text-align: center;
 }
 
+.main-ctnr input {
+    text-align: center;
+    width: 300px;
+}
+
+.inp-ctnr {
+    padding-left: 30px;
+}
+
 .table-headers {
     display: flex;
     justify-content: center;
@@ -25,9 +34,9 @@
     margin-left: 120px;
 }
 
-.ul {
+/* .ul {
     padding-right: 40px;
-}
+} */
 
 .price-header {
     margin-left: 148px;
