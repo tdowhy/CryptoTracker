@@ -1,13 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&family=Roboto&display=swap');
 
-.coin-data-ctnr {
-    text-align: center;
-    
-}
+/* @media only screen and (min-width: 1024px) {
+    .coin-data-ctnr {
+        position: relative;
+        margin: auto;
+        font-weight: 400;
+    }
+    .coin-inner {
+        width: 1024px;
+        justify-content: center;
+    }
+} */
+
+/* Mobile */
 .flex-column {
     font-family: 'Roboto', sans-serif;
 }
 
+.col-sm div {
+    display: flex!important;
+    flex-direction: column!important;
+    height: 100px;
+}
+
 .coin-data-category {
+    color: #6c757d!important;
     font-family: 'Lexend Mega', sans-serif;
+    text-align: right;
+}
+ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+  }
+
+/* .coin-mobile-data-ctnr {
+    justify-content: center;
+    display: flex;
+} */
+
+.coin-inner {
+    justify-content: center;
+    display: flex;
+}
+
+/* .coin-data-ctnr {
+    display: none;
+} */
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .coin-data-ctnr {
+        position: relative;
+        margin: auto;
+        text-align: center;
+    }
+    .coin-inner {
+        width: 1024px;
+        justify-content: center;
+        display: flex;
+    }
+    /* .coin-mobile-data-ctnr {
+        display: none;
+    }
+    .coin-data-ctnr {
+        display: initial;
+    } */
+    .span .coin-data-category {
+        color: #6c757d!important;
+    }
 }

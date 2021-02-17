@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import Chartjs from 'chart.js';
-import { chartOptions } from './chartConfig/chartConfig';
+import { chartOptions } from '../chartConfig/chartConfig';
 import './CoinChart.css';
 import './Coin.css';
 

@@ -12,14 +12,12 @@ function App() {
     {/* <Header /> */}
       <div className="cryptotracker-app">
         <Header />
-        <BrowserRouter>
+        {/* <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/coins/:id" component={CoinPage} />
         </Switch>
-        {/* <Footer className="Footer" /> */}
-        </BrowserRouter>
-        {/* <Footer className="Footer" /> */}
+        </BrowserRouter> */}
       </div>
       <Footer className="ftr" />
     </>
