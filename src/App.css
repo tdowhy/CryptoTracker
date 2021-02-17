@@ -1,13 +1,8 @@
-/* /* .ctnr {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-} */
+/* I think this is good enough, footer doesn't go to the end 
+   on mobile but it may be because of iPhone notch. */
 
 .cryptotracker-app {
-  /* background-color: #EAE7DC; */
   flex: 1 0 auto;
-  /* overflow: visible; */
   min-height: 100%;
   width: 100%;
   /* min-width: 1086px; */
@@ -18,7 +13,6 @@
   left: 0;
   bottom: 0;
   overflow: hidden;
-  /* position: fixed; */
   width: 100%
 }
 

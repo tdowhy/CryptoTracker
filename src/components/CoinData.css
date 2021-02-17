@@ -28,13 +28,13 @@
     font-family: 'Lexend Mega', sans-serif;
     text-align: right;
 }
-ul {
+/* ul {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
-  }
+  } */
 
 /* .coin-mobile-data-ctnr {
     justify-content: center;

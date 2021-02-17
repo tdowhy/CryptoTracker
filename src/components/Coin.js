@@ -21,7 +21,7 @@ const Coin = (props) => {
                         ) : (
                             <p className="coin-percent green">{props.price_change.toFixed(2)}</p>
                         )}
-                        {/* <p className="coin-volume">${props.total_volume.toLocaleString()}</p> */}
+                        <p className="coin-volume">${props?.total_volume?.toLocaleString()}</p>
                     </div>
                     </li>
                 </Link> 
