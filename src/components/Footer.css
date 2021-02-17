@@ -10,7 +10,9 @@
     padding: 2em;
     padding-top: 1em;
     height: 2vh;
-    min-width: 1450px;
+    /* min-width: 1450px; */
+    width: 100%;
+    text-align: center;
 }
 
 .footer-text {
@@ -18,7 +20,7 @@
 }
 
 .icon {
-    margin-left: 84%;
+    /* margin-left: 84%; */
     /* margin-right: 16%; */
 }
 a, a:hover, a:visited, a:active {
