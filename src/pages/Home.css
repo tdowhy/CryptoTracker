@@ -15,7 +15,8 @@
     flex-direction: row;
     justify-items: start;
     align-items: center;
-    min-width: 900px;
+    /* min-width: 900px; */
+    width: 100%;
     border-bottom: 1px solid #d7d7d7;
     padding-top: 15px;
 }
