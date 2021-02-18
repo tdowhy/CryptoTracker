@@ -3,22 +3,31 @@
 .header {
     background: #D8C3A5;
     color: #706c6d;
-    /* width: 250px; */
     width: 102%;
     text-align: center;
     font-family: 'Lexend Mega', sans-serif;
 }
 
 .site-title {
-    /* desktop */
-    /* font-size: 1.3em; */
     font-size: 2.2em;
     height: 100%;
 }
 
 .home-logo {
     margin-bottom: 15px;
-    /* margin-bottom: 5px; */
 }
 
-/* size 30 for desktop */
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .header {
+      width: 250px;
+    }
+    
+    .site-title {
+        font-size: 1.3em;
+    }
+
+    .home-logo {
+        margin-bottom: 5px;
+  }
+}

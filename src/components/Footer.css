@@ -1,17 +1,9 @@
-/* @media only screen and (max-width: 600px) {
-    .Footer {
-      min-width: 600px;
-    }
-  } */
-
 .Footer {
     background: #D8C3A5;
     color: #706c6d;
     padding: 2em;
     padding-top: 1em;
     height: 2vh;
-    /* min-width: 1450px; */
-    /* only for mobile will need to change for desktop */
     width: 106vw;
     text-align: center;
 }
@@ -20,11 +12,23 @@
     margin-left: 1%;
 }
 
-.icon {
-    /* margin-left: 84%; */
-    /* margin-right: 16%; */
-}
 a, a:hover, a:visited, a:active {
     color: inherit;
     text-decoration: none;
    }
+
+   /* Desktop */
+@media only screen and (min-width: 768px) {
+    .Footer {
+      width: 100%;
+      /* min-width: 1450px; */
+    }
+    
+    .site-title {
+        font-size: 1.3em;
+    }
+
+    .home-logo {
+        margin-bottom: 5px;
+  }
+}

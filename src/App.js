@@ -15,7 +15,7 @@ function App() {
         <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home} />
-          {/* <Route exact path="/coins/:id" component={CoinPage} /> */}
+          <Route exact path="/coins/:id" component={CoinPage} />
         </Switch>
         </BrowserRouter>
       </div>

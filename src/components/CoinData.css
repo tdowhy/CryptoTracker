@@ -28,22 +28,23 @@
     font-family: 'Lexend Mega', sans-serif;
     text-align: right;
 }
-/* ul {
+.coin-info {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
-  } */
+    margin-right: 30px;
+  }
 
-/* .coin-mobile-data-ctnr {
-    justify-content: center;
-    display: flex;
-} */
+.coin-mobile-data-ctnr {
+    width: 80%;
+}
 
 .coin-inner {
     justify-content: center;
     display: flex;
+    /* width: 100%; */
 }
 
 /* .coin-data-ctnr {

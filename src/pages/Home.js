@@ -35,15 +35,15 @@ const Home = () => {
             <div className="inp-ctnr">
                 <input className="rounded border-0" type="text" placeholder="Search for a coin..." onChange={handleChange} />
             </div>
-            <div className="table-headers">
-                {/* <div className="header-row">
+            {/* <div className="table-headers">
+                <div className="header-row">
                     <p className="coin-header">Coin</p>
                     <p className="price-header">Price</p>
                     <p className="market-cap-header">Market Cap</p>
                     <p className="price-change-header">24H Change</p>
-                    <p className="volume-header">Total Volume</p>
-                </div> */}
-            </div>
+                    <p className="volume-header">Volume</p>
+                </div>
+            </div> */}
             <ul className="lost-group mt-2">
                 {filteredCoins.map(coin => {
                     return (
