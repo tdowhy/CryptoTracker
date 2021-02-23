@@ -3,12 +3,13 @@ import { useParams } from 'react-router-dom';
 import coingecko from '../apis/coingecko_api';
 import CoinChart from '../components/CoinChart';
 import CoinData from '../components/CoinData';
+import { Ripple } from 'react-spinners-css';
 import './CoinPage.css';
 
 const CoinPage = () => {
     const [coin, setCoin] = useState([]);
     const [histData, setHistData] = useState({});
-    const [isLoading, setIsLoading] = useState(false);
+    const [loading, setLoading] = useState(false);
     const params = useParams();
     
     const formatData = data => {
@@ -22,7 +23,7 @@ const CoinPage = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            setIsLoading(true);
+            setLoading(true);
             const [coinData, coinDay, coinWeek, coinYear] = await Promise.all([
                 coingecko.get('/coins/' + params.id),
                 coingecko.get('/coins/'+params.id+'/market_chart', {
@@ -53,18 +54,18 @@ const CoinPage = () => {
                 year: formatData(coinYear?.data?.prices),
                 price_change_1y: coinData?.data?.market_data?.price_change_percentage_1y,
             });
-            setIsLoading(false);
+            setLoading(false);
         };
         fetchData();
     }, []);
 
     const renderData = () => {
-        if (isLoading) {
-            <div>Loading...</div>
-        }
         return (
             <div className="coin-list">
-                <CoinChart data={histData} 
+                {loading ? (<div className="loading-spinner"><Ripple color="#e98074" size={200} /></div>
+                ) : (
+                    <>
+                    <CoinChart data={histData} 
                     name={coin.name} 
                     current_price={coin?.market_data?.current_price?.cad.toLocaleString()} />
                 <CoinData key={coin.id} 
@@ -76,6 +77,8 @@ const CoinPage = () => {
                     total_volume={coin?.market_data?.total_volume?.cad.toLocaleString()} 
                     market_cap={coin?.market_data?.market_cap?.cad.toLocaleString()}
                     current_price={coin?.market_data?.current_price?.cad.toLocaleString()} />
+                </>
+                )}
             </div>
         )
     }

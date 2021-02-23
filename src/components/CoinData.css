@@ -42,8 +42,8 @@
 }
 
 .coin-inner {
-    justify-content: center;
-    display: flex;
+    /* justify-content: center; */
+    /* display: flex; */
     /* width: 100%; */
 }
 
@@ -55,13 +55,11 @@
 @media only screen and (min-width: 768px) {
     .coin-data-ctnr {
         position: relative;
-        margin: auto;
-        text-align: center;
+        /* margin: auto; */
+        /* text-align: center; */
     }
     .coin-inner {
         width: 1024px;
-        justify-content: center;
-        display: flex;
     }
     /* .coin-mobile-data-ctnr {
         display: none;

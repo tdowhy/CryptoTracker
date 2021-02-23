@@ -5,9 +5,9 @@ import './CoinData.css';
 const CoinData = (props) => {
 
     return (
-        <div className="m-5 mt-5 p-2 rounded justify-content-center row coin-mobile-data-ctnr">
-            <div className='coin-inner'>
-                <ul className="coin-info">
+        <div className="m-5 mt-5 p-2 rounded justify-content-center align-items-center row coin-data-ctnr">
+            <div className='coin-inner align-items-center justify-content-center'>
+                <ul className="coin-info align-items-center justify-content-center">
                     <li className="coin-data-category">Price</li>
                     <li className="coin-data-category">24H Change</li>
                     <li className="coin-data-category">24H Low</li>
