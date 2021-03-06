@@ -6,7 +6,14 @@ A Demo is hosted [here](https://hidden-anchorage-23970.herokuapp.com/).
 
 ## Screen Shots
 
+### Home Screen
+![HomePage](/screenshots/Home.png?raw=true )
 
+### Home Screen Mobile
+![HomeMobile](/screenshots/HomeMobile.png?raw=true )
+
+### Coin Page
+![CoinPage](/screenshots/CoinPage.png?raw=true )
 
 ## Getting Started with Create React App
 
