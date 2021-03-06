@@ -5,7 +5,7 @@ import { FiDollarSign } from "react-icons/fi";
 
 const CoinNav = () => {
     return (
-        <div className="m-2 mt-2 rounded header">
+        <div className="m-2 rounded header">
             <div>
                 <span>
                 <a href="/">

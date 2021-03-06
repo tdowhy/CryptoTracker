@@ -35,7 +35,8 @@ const Home = () => {
         coin.name.toLowerCase().includes(search.toLowerCase())
     )
     return (
-        <div className="main-ctnr mt-3 mr-2">
+        // <div className="main-ctnr mt-3 mr-2">
+        <div className="main-ctnr">
             {loading ? (
                 <Ripple className="loading-spinner" color="#e98074" size={200} />
             ) : (
@@ -43,13 +44,15 @@ const Home = () => {
             <div className="inp-ctnr">
                 <input className="rounded border-0" type="text" placeholder="Search for a coin..." onChange={handleChange} />
             </div>
-            <ul className="lost-group mt-2">
+            <div className="d-flex justify-content-center">
+            <ul className="list-group mt-2">
                 {filteredCoins.map(coin => {
                     return (
                     <Coin key={coin.id} id={coin.id} name={coin.name} symbol={coin.symbol} image={coin.image} current_price={coin.current_price} market_cap={coin.market_cap} total_volume={coin.total_volume} price_change={coin.price_change_percentage_24h} />
                     )
                 })}
             </ul>
+            </div>
             </>)}
         </div>
     )

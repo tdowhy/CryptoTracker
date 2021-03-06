@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# CryptoTracker
+
+This project is a cryptocurrency price tracker for the top 100 coins of the day. It contains a list of coins and their information on the home route "/" and a more detailed breakdown for each coin at the route "/coins/{coinName}". This project uses Axios to perform GET requests from [CoinGecko](https://www.coingecko.com/en/api) and react hooks for managing state and page updates. The application is responsive for browsers and mobile.
+
+A Demo is hosted [here](https://hidden-anchorage-23970.herokuapp.com/).
+
+## Screen Shots
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
